@@ -1,3 +1,7 @@
 *~
 
 .idea
+
+# spring-boot
+.gradle
+skaffold/spring-boot/build
