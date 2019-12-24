@@ -5,4 +5,4 @@ metadata:
 spec:
   containers:
   - name: helloworld
-    image: registry-url/test
+    image: your-registry/test

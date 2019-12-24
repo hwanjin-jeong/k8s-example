@@ -1,0 +1,10 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  name: spring-boot-multi-module
+spec:
+  containers:
+  - name: hello-world-1
+    image: your-registry/test
+  - name: hello-world-2
+    image: your-registry/test2

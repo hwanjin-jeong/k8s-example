@@ -4,4 +4,4 @@
 
 # spring-boot
 .gradle
-skaffold/spring-boot/build
+build

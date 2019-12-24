@@ -1,10 +1,13 @@
 apiVersion: skaffold/v2alpha1
 kind: Config
 metadata:
-  name: spring-boot
+  name: spring-boot-multi-module
 build:
   artifacts:
   - image: your-registry/test
+    context: hello-world-1
+  - image: your-registry/test2
+    context: hello-world-2
 deploy:
   kubectl:
     manifests:
