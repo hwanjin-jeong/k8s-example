@@ -5,4 +5,4 @@ metadata:
 spec:
   containers:
   - name: helloworld
-    image: ecr.baemin.in/test
+    image: registry-url/test

@@ -4,7 +4,7 @@ metadata:
   name: spring-boot
 build:
   artifacts:
-  - image: ecr.baemin.in/test
+  - image: registry-url/test
 deploy:
   kubectl:
     manifests:
