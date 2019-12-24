@@ -1,7 +1,7 @@
 apiVersion: v1
 kind: Pod
 metadata:
-  name: go
+  name: spring-boot-jib
 spec:
   containers:
   - name: helloworld
