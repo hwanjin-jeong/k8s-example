@@ -1,0 +1,8 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  name: go
+spec:
+  containers:
+  - name: helloworld
+    image: your-registry/test

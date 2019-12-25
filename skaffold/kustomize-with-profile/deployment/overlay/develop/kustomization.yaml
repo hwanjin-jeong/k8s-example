@@ -1,0 +1,7 @@
+commonLabels:
+  phase: develop
+
+bases:
+  - ../../base
+
+namePrefix: develop-
