@@ -1,0 +1,6 @@
+bases:
+  - infrastructure
+
+resources:
+  - pod.yaml
+  

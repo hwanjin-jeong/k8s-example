@@ -1,0 +1,4 @@
+bases:
+  - kafka
+  - zookeeper
+  - mysql

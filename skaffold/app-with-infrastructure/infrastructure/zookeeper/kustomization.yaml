@@ -1,0 +1,5 @@
+
+resources:
+  - zookeeper.yaml
+  - zookeeper-service.yaml  
+

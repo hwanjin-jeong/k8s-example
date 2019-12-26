@@ -1,0 +1,10 @@
+apiVersion: skaffold/v2alpha1
+kind: Config
+metadata:
+  name: go
+build:
+  artifacts:
+  - image: your-registry/test
+deploy:
+  kustomize:
+    path: "."
