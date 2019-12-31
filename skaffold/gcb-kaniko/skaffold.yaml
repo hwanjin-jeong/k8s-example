@@ -1,0 +1,9 @@
+apiVersion: skaffold/v2alpha1
+kind: Config
+build:
+  googleCloudBuild:
+    projectId: sound-dahlia-263707
+  artifacts:
+  - image: gcr.io/sound-dahlia-263707/test
+    kaniko:
+      cache: {}
