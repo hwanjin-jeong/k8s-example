@@ -1,0 +1,26 @@
+apiVersion: skaffold/v2alpha1
+kind: Config
+
+build:
+  artifacts:
+    - image: your-registry/test
+
+profiles:
+  - name: develop
+    activation:
+      - kubeContext: p02
+    deploy:
+      kustomize:
+        path: "./deployment/overlay/develop"
+  - name: dev
+    deploy:
+      kubeContext: p02
+      kustomize:
+        path: "./deployment/overlay/production"
+  - name: production
+    activation:
+      - kubeContext: p01
+    deploy:
+      kustomize:
+        path: "./deployment/overlay/production"
+
