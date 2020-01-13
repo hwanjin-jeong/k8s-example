@@ -9,8 +9,8 @@ import (
 func main() {
 	http.HandleFunc("/", hello)
 
-	log.Println("Listening on port 8080")
-	http.ListenAndServe(":8080", nil)
+	log.Println("Listening on port 8081")
+	http.ListenAndServe(":8081", nil)
 }
 
 func hello(w http.ResponseWriter, r *http.Request) {

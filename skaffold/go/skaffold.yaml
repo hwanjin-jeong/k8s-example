@@ -4,7 +4,7 @@ metadata:
   name: go
 build:
   artifacts:
-  - image: your-registry/test
+  - image: ecr.baemin.in/test
 deploy:
   kubectl:
     manifests:

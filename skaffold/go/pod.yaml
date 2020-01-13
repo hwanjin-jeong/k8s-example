@@ -4,5 +4,5 @@ metadata:
   name: go
 spec:
   containers:
-  - name: helloworld
-    image: your-registry/test
+  - name: hello-world
+    image: ecr.baemin.in/test
