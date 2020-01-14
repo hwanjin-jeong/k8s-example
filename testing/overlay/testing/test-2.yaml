@@ -1,0 +1,10 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  name: httpie-get-failure
+spec:
+  containers:
+  - name: get
+    image: clue/httpie
+    args: ["POST", "develop-httpbin-service/get", "--check-status"]
+  restartPolicy: Never
