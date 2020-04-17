@@ -1,0 +1,28 @@
+apiVersion: eksctl.io/v1alpha5
+kind: ClusterConfig
+
+metadata:
+  name: managed-node-group
+  region: ap-northeast-2
+
+vpc:
+  id: "vpc-4a791123"
+  cidr: "10.0.0.0/16"
+  subnets:
+    private:
+      ap-northeast-2a:
+        id: "subnet-be2fdcd6"
+        cidr: "10.0.10.0/24"
+
+      ap-northeast-2c:
+        id: "subnet-f815a7b5"
+        cidr: "10.0.0.0/24"
+
+managedNodeGroups:
+  - name: ng-Managed
+    instanceType: t3.large
+    minSize: 2
+    desiredCapacity: 2
+    maxSize: 2
+    availabilityZones: ["ap-northeast-2a", "ap-northeast-2c"]
+    volumeSize: 20
